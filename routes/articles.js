@@ -4,7 +4,7 @@ const auth = require("../middleware/auth");
 
 
 router.get("/", auth,getSavedArticles);
-router.post("/", auth,createArticle);
-router.delete("/:articleId", auth,deleteArticle);
+router.put("/articleId/saved", auth,createArticle);
+router.delete("/:articleId/delete", auth,deleteArticle);
 
 module.exports = router;
